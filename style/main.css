@@ -47,3 +47,7 @@
 #myBtn:hover {
   background-color: #555;
 }
+
+.body{
+  @apply font-mono;
+}
