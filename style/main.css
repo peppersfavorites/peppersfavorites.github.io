@@ -20,6 +20,14 @@
   color: #F83CBC;
 }
 
+.card:hover .card-img {
+  transform: scale(1.4);
+}
+
+.card .card-content div {
+  overflow: hidden;
+}
+
 .card-img {
   height: 250px;
 }
@@ -37,7 +45,7 @@
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #8b1058;
+  background-color: #F83CBC;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -48,6 +56,8 @@
   background-color: #555;
 }
 
-.body{
-  @apply font-mono;
+*{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
