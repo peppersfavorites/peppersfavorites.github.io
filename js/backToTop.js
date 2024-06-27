@@ -20,12 +20,4 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-let image = document.querySelector('img.image'); 
-
-image.addEventListener('click', function(e){ 
-     image.requestFullscreen(); 
- }) 
- 
- image.addEventListener('dblclick', function(e){ 
-      document.exitFullscreen(); 
-})
+$(document).ready(function(){$("img").click(function(){this.requestFullscreen()})});
