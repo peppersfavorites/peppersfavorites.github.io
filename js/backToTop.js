@@ -19,3 +19,13 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+let image = document.querySelector('img.image'); 
+
+image.addEventListener('click', function(e){ 
+     image.requestFullscreen(); 
+ }) 
+ 
+ image.addEventListener('dblclick', function(e){ 
+      document.exitFullscreen(); 
+})

@@ -61,24 +61,3 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-
-html:not(.mobile) img:hover {
-  cursor: zoom-in;
-  transition: .5s;
-  transition-delay: 90s; /* how long before the img automatically returns to original size */
-  transition-property: -webkit-transform;
-  -webkit-transform: scale(1); 
-  z-index: 999; 
-  position: sticky; /* this and z-index should ensure that the zoomed img is always displayed on top of any other element */
-}
-
-html:not(.mobile) img:active { 
- cursor: zoom-out;
- -overflow: auto; /* Enable scroll if needed */
- transition: 0s;
- transition-delay: 0.05s;
- transition-property: -webkit-transform;
- -webkit-transform: scale(2.5); /* set zoom level */
- -webkit-transform-origin: 0% 0%; /* set img position */
- z-index: 1000; 
-}
